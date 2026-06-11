@@ -1,69 +1,140 @@
-# StudyBuddy AI
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/DRPatel75/StudyBuddyStreamlit)
+# 📚 StudyBuddy AI
 
-StudyBuddy AI is a versatile, AI-powered learning companion built with Streamlit and powered by the Groq API with the Llama 3.3 model. It's designed to assist students by providing quick answers, detailed explanations, quizzes, and flashcards on any topic.
+An AI-powered learning assistant built using **Streamlit** and **Groq (Llama 3.3)** to help students learn more effectively. StudyBuddy AI provides instant explanations, answers academic questions, generates quizzes, and creates flashcards to make studying interactive and engaging.
 
-![StudyBuddy AI Screenshot](https://raw.githubusercontent.com/DRPatel75/StudyBuddyStreamlit/main/app_screenshot.png)
+---
 
-## Features
+## 🚀 Features
 
-StudyBuddy AI offers four core features to enhance your learning experience:
+* ❓ **Ask Questions**
 
-*   **❓ Ask a Question**: Get quick, accurate answers to any study-related question.
-*   **📖 Explain a Topic**: Receive detailed explanations of complex topics, broken down into simple terms with key points and real-life examples.
-*   **📝 Generate Quiz**: Create multiple-choice quizzes on any subject to test your knowledge. You can specify the number of questions.
-*   **🃏 Generate Flashcards**: Instantly generate digital flashcards with questions on the front and answers on the back to aid in memorization.
+  * Get instant answers to academic questions.
 
-## Tech Stack
+* 📖 **Explain Topics**
 
-*   **Frontend**: [Streamlit](https://streamlit.io/)
-*   **AI/Inference**: [Groq API](https://groq.com/)
-*   **Language Model**: Llama 3.3 70B
+  * Understand complex concepts in simple language with examples.
 
-## Getting Started
+* 📝 **Quiz Generator**
 
-Follow these instructions to set up and run the project locally.
+  * Generate multiple-choice quizzes on any topic.
+  * Improved readable quiz format.
 
-### Prerequisites
+* 🃏 **Flashcard Generator**
 
-*   Python 3.8 or later
-*   A Groq API Key. You can get one from the [Groq Console](https://console.groq.com/keys).
+  * Create interactive flashcards for quick revision.
+  * Click-to-reveal answers for better learning.
 
-### Installation
+* 🎨 **User-Friendly Interface**
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/DRPatel75/StudyBuddyStreamlit.git
-    cd StudyBuddyStreamlit
-    ```
+  * Modern and responsive UI built with Streamlit.
 
-2.  **Install the required Python packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+---
 
-### Configuration
+## 🛠️ Technologies Used
 
-The application requires your Groq API key to function. It's configured to read the key from Streamlit's secrets management.
+* **Frontend:** Streamlit
+* **Programming Language:** Python
+* **AI Model:** Llama 3.3 (70B Versatile)
+* **API Provider:** Groq
+* **Version Control:** Git & GitHub
+* **Deployment:** Streamlit Cloud
 
-1.  Create a directory named `.streamlit` in the root of the project folder.
-2.  Inside the `.streamlit` directory, create a file named `secrets.toml`.
-3.  Add your Groq API key to the `secrets.toml` file as shown below:
+---
 
-    ```toml
-    # .streamlit/secrets.toml
+## 📂 Project Structure
 
-    GROQ_API_KEY="your_groq_api_key_here"
-    ```
+```text
+StudyBuddyStreamlit/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .streamlit/
+    └── secrets.toml
+```
 
-## Usage
+---
 
-Once the installation and configuration are complete, you can run the Streamlit application.
+## ⚙️ Installation
 
-1.  Navigate to the project's root directory in your terminal.
-2.  Run the following command:
-    ```bash
-    streamlit run app.py
-    ```
-3.  The application will open in your default web browser.
-4.  Use the sidebar to select a feature, enter your topic or question, and click the button to generate a response from the AI.
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/DRPatel75/StudyBuddyStreamlit.git
+cd StudyBuddyStreamlit
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure API Key
+
+Create a `.streamlit/secrets.toml` file and add:
+
+```toml
+GROQ_API_KEY = "your_groq_api_key"
+```
+
+### 4. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## ☁️ Deployment
+
+This project can be deployed easily using **Streamlit Cloud**.
+
+1. Push the project to GitHub.
+2. Sign in to Streamlit Cloud.
+3. Connect the GitHub repository.
+4. Add the `GROQ_API_KEY` in Streamlit Secrets.
+5. Deploy the application.
+
+---
+
+## 🎯 Problem Statement
+
+Students often struggle to understand complex concepts while studying. Searching online can provide lengthy or irrelevant results, and teachers may not always be available. There is a need for a tool that can explain topics in simple terms, answer questions instantly, and generate quizzes or flashcards on demand using AI.
+
+---
+
+## 💡 Proposed Solution
+
+StudyBuddy AI is designed to serve as an intelligent learning companion by:
+
+* Providing instant academic assistance.
+* Explaining difficult topics in simple language.
+* Generating quizzes for self-assessment.
+* Creating flashcards for effective revision.
+* Enhancing self-learning experiences using AI.
+
+---
+
+## 🔮 Future Scope
+
+* PDF Upload and Notes Summarization
+* Voice-Based Interaction
+* Multi-language Support
+* Personalized Study Recommendations
+* Progress Tracking Dashboard
+
+---
+
+## 👨‍💻 Developer
+
+**Divyakumar Patel**
+
+Capstone Project – StudyBuddy AI
+
+---
+
+## 📄 License
+
+This project is developed for educational and academic purposes.
